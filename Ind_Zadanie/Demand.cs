@@ -25,7 +25,7 @@ namespace Ind_Zadanie
         private bool doner;
         List<Demands> dm = new List<Demands>();
         List<Book> bk = new List<Book>();
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)  //Данный метод позволяет оставить заявку на существующую книгу, внося соответствующие изменения в поля книги.
         {
             //doner = false;  
             dm.Clear();
@@ -76,7 +76,7 @@ namespace Ind_Zadanie
             
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)  //данный метод записывает заявку на новую книгу, внося изменения в базу данных заявок.
         {
             dm.Clear();
             doner = false;
@@ -115,7 +115,7 @@ namespace Ind_Zadanie
             }
         }
 
-        private void Back_button_Click(object sender, EventArgs e)
+        private void Back_button_Click(object sender, EventArgs e)  //возврат в меню читателя
         {
             this.Hide();
             Menu_Reader r18 = new Menu_Reader();

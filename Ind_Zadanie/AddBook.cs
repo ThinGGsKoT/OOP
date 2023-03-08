@@ -29,9 +29,9 @@ namespace Ind_Zadanie
             Menu_Admin f2 = new Menu_Admin();
             f2.ShowDialog();
         }
-        Book book = null;
-        List<Book> bk = null; //коллекция представляет собой локальное хранилище экземпляров класса книг
-        List<Reader> rd = null;  //коллекция представляет собой локальное хранилище экземпляров класса читателя
+        Book book;
+        List<Book> bk = new List<Book>(); //коллекция представляет собой локальное хранилище экземпляров класса книг
+        List<Reader> rd = new List<Reader>();  //коллекция представляет собой локальное хранилище экземпляров класса читателя
         private bool doner; //поле, отслеживающее успешность выполнения поиска
         private void AddBook_button_Click(object sender, EventArgs e)  //метод добавляет книгу в базу
         {
